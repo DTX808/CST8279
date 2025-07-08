@@ -1,19 +1,21 @@
-# def CelToFahr():
-#     far = float(input('Enter temp in Fahrenheit: '))
-#     celsius = (far - 32) * (5/9)
-#     print(f'{far}°F= {celsius:2f}°C')
-#     return celsius
-# CelToFahr()
-
-# def my_min(a,b):
-#     if a == b:
-#         print(f'{a} is equal to {b}')
-#         return a
-#     else:
-#         mini = a if a < b else b
-#         print(f'the smaller number is {mini}')
-#         return 
-# my_min(30,23)
+# Fahr to celsius conversion
+def CelToFahr():
+    far = float(input('Enter temp in Fahrenheit: '))
+    celsius = (far - 32) * (5/9)
+    print(f'{far}°F= {celsius:2f}°C')
+    return celsius
+CelToFahr()
+# Small number finder
+def my_min(a,b):
+    if a == b:
+        print(f'{a} is equal to {b}')
+        return a
+    else:
+        mini = a if a < b else b
+        print(f'the smaller number is {mini}')
+        return 
+my_min(30,23)
+#Volume calculator 
 import math
 def VolumeOfSphere(radius: float) -> float:
     """
@@ -23,8 +25,6 @@ def VolumeOfSphere(radius: float) -> float:
     if radius < 0:
         raise ValueError('Radius must be non-negative')
     return (4/3)*(math.pi)*(radius**3)
-
-
 print(f'the volume is: {VolumeOfSphere(3)}')
 
 
